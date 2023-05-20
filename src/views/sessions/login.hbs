@@ -1,0 +1,27 @@
+<section style="max-width: 600px; margin:0 auto;">
+    <h1 class="text-4xl font-semibold text-center">
+        Iniciar sesión
+    </h1>
+    <form class="px-4 mt-12  flex flex-col items-center gap-y-4" action="/sessions/login" method="post">
+        
+
+        <div class="flex flex-col w-full">
+            <label for="email" class="block mb-2 text-sm font-medium text-neutral-800 ">
+                Email
+            </label>
+            <input type="email" name="email" class="bg-gray-50 border border-gray-300 text-neutral-800 text-sm rounded-lg  block w-full p-2.5" placeholder="ejemplo@email.com" required>
+        </div>
+
+        <div class="flex flex-col w-full">
+            <label for="password" class="block mb-2 text-sm font-medium text-neutral-800">
+                Contraseña
+            </label>
+            <input type="password" name="password" class="bg-gray-50 border border-gray-300 text-neutral-800 text-sm rounded-lg  block w-full p-2.5" required>
+        </div>
+        
+        <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-sm w-full md:w-auto px-5 py-2.5 text-center self-end">
+            Acceder
+        </button>
+    </form>
+    <p class="text-center mt-3">¿Aún no tienes cuenta? <a class="text-blue-700" href="/sessions/register">Regístrate.</a></p>
+</section>

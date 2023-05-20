@@ -7,13 +7,10 @@
 }
 html {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 62.5%;
+    
 }
 
-body {
-    background-color: #ccc;
-    min-height: 100vh;
-}
+
 
 .main {
     height: 100%;
@@ -33,27 +30,46 @@ body {
     max-width: 900px;
     margin: 20px auto;
     display: grid;
+    padding: 0 1rem;
     grid-template-columns: repeat(
         auto-fill,
         minmax(220px, 1fr)
     );
-    gap: 5px;
+    gap: 10px;
 }
 
 .product {
-    padding: 1rem;
-    background-color: #fff;
-    border-radius: .6rem;
+    margin-bottom: 10px;
 }
-.product img {
-    height: 220px;
+.product a {
+    display: flex;
+    justify-content: start;
+    
+}
+.product a img {
+    height: 280px;
     width: 100%;
     object-fit: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.product p {
-    color: green;
-    font-size: 1.2rem;
+
+.product a p {
+    position: absolute;
+    padding: 3px;
+    align-self: flex-end;
+    justify-self: flex-start;
+    background-color: #fff;
+    font-size: .8rem;
+}
+
+.product h3 {
+    margin-top: 10px;
+    font-size: 1rem;
+    
 }
 
 
